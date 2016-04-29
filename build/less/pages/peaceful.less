@@ -18,10 +18,27 @@ body.peaceful {
 	         -o-transform: rotate(120deg);
 	            transform: rotate(120deg);
 	    cursor: pointer;
-	    .smooth();
+        .smooth();
 	    &:hover {
 			height: 180px;
 	    }
+        &.active {
+            -webkit-transition-timing-function: ease-in;
+             -o-transition-timing-function: ease-in;
+                transition-timing-function: ease-in;
+            -webkit-transition-duration: 4000ms;
+                 -o-transition-duration: 4000ms;
+                    transition-duration: 4000ms;
+        }
+        &.active2 {
+            position: absolute;
+            -webkit-transition-timing-function: ease-in;
+             -o-transition-timing-function: ease-in;
+                transition-timing-function: ease-in;
+            -webkit-transition-duration: 500ms;
+                 -o-transition-duration: 500ms;
+                    transition-duration: 500ms;
+        }
     }
 	.hexagon-in1 {
 	    overflow: hidden;
@@ -133,12 +150,34 @@ body.peaceful {
         &:hover {
             top: 0px;
         }
+        &.active{
+            top: 80px;
+            left: 240px;
+            &:hover {
+                top: 50px;
+            }
+        }
+        &.active2 {
+            top: -200px !important;
+            left: -200px !important;
+        }
     }
     #kitchen {
         top: 30px;
         left: 550px;
         &:hover {
             top: 0px;
+        }
+        &.active{
+            top: 80px;
+            left: 520px;
+            &:hover {
+                top: 50px;
+            }
+        }
+        &.active2 {
+            top: -200px !important;
+            left: 200px !important;
         }
     }
     #cafe {
@@ -147,6 +186,17 @@ body.peaceful {
         &:hover {
             top: 100px;
         }
+        &.active{
+            top: 165px;
+            left: 95px;
+            &:hover {
+                top: 135px;
+            }
+        }
+        &.active2 {
+            top: -200px !important;
+            left: -400px !important;
+        }
     }
     #ocean {
     	top: 130px;
@@ -154,12 +204,33 @@ body.peaceful {
     	&:hover {
     		top: 100px;
     	}
+        &.active{
+            top: 165px;
+            &:hover {
+                top: 135px;
+            }
+        }
+        &.active2 {
+            top: -200px !important;
+            left: 380px !important;
+        }
     }
     #engine {
         top: 130px;
         left: 720px;
         &:hover {
             top: 100px;
+        }
+        &.active{
+            top: 165px;
+            left: 665px;
+            &:hover {
+                top: 135px;
+            }
+        }
+        &.active2 {
+            top: -200px !important;
+            left: 1000px !important;
         }
     }
     #lake {
@@ -168,13 +239,35 @@ body.peaceful {
     	&:hover {
     		top: 200px;
     	}
+        &.active {
+            top: 245px;
+            left: 240px;
+            &:hover {
+                top: 215px;
+            }
+        }
+        &.active2 {
+            top: 20px !important;
+            left: -400px !important;
+        }
     }
     #park {
     	top: 230px;
     	left: 550px;
     	&:hover {
     		top: 200px;
-    	}	
+    	}
+        &.active {
+            top: 245px;
+            left: 520px;
+            &:hover {
+                top: 215px;
+            }
+        }
+        &.active2 {
+            top: 20px !important;
+            left: 1000px !important;
+        }
     }
     #fire {
     	top: 330px;
@@ -182,6 +275,17 @@ body.peaceful {
     	&:hover {
     		top: 300px;
     	}
+        &.active{
+            top: 330px;
+            left: 95px;
+            &:hover {
+                top: 300px;
+            }
+        }
+        &.active2 {
+            top: 330px !important;
+            left: -400px !important;
+        }
     }
     #soda {
     	top: 330px;
@@ -189,6 +293,17 @@ body.peaceful {
     	&:hover {
     		top: 300px;
     	}
+        &.active{
+            top: 330px;
+            left: 665px;
+            &:hover {
+                top: 300px;
+            }
+        }
+        &.active2 {
+            top: 330px !important;
+            left: 1000px !important;
+        }
     }
     #night {
     	top: 430px;
@@ -196,6 +311,17 @@ body.peaceful {
     	&:hover {
     		top: 400px;
     	}
+        &.active {
+            top: 400px;
+            left: 240px;
+            &:hover {
+                top: 370px;
+            }
+        }
+        &.active2 {
+            top: 500px !important;
+            left: -500px !important;
+        }
     }
     #underwater {
     	top: 430px;
@@ -203,12 +329,34 @@ body.peaceful {
     	&:hover {
     		top: 400px;
     	}
+        &.active {
+            top: 400px;
+            left: 520px;
+            &:hover {
+                top: 370px;
+            }
+        }
+        &.active2 {
+            top: 500px !important;
+            left: 1000px !important;
+        }
     }
     #fireworks {
         top: 530px;
         left: 40px;
         &:hover {
             top: 500px;
+        }
+        &.active{
+            top: 485px;
+            left: 95px;
+            &:hover {
+                top: 455px;
+            }
+        }
+        &.active2 {
+            top: 650px !important;
+            left: -500px !important;
         }
     }
     #windchime {
@@ -217,27 +365,70 @@ body.peaceful {
     	&:hover {
     		top: 500px;
     	}
+        &.active {
+            top: 485px;
+            &:hover {
+                top: 455px;
+            }
+        }
+        &.active2 {
+            top: 1200px !important;
+            left: 380px !important;
+        }
     }
     #traffic {
         top: 530px;
         left: 720px;
         &:hover {
             top: 500px;
-        }   
+        }
+        &.active{
+            top: 485px;
+            left: 665px;
+            &:hover {
+                top: 455px;
+            }
+        } 
+        &.active2 {
+            top: 600px !important;
+            left: 1200px !important;
+        } 
     }
     #rain {
         top: 630px;
         left: 210px;
         &:hover {
             top: 600px;
-        }   
+        }  
+        &.active{
+            top: 560px;
+            left: 240px;
+            &:hover {
+                top: 530px;
+            }
+        }
+        &.active2 {
+            top: 1200px !important;
+            left: 150px !important;
+        }
     }
     #train {
         top: 630px;
         left: 550px;
         &:hover {
             top: 600px;
-        }   
+        }
+        &.active{
+            top: 560px;
+            left: 520px;
+            &:hover {
+                top: 530px;
+            }
+        }
+        &.active2 {
+            top: 1200px !important;
+            left: 600px !important;
+        }
     }
     .footer {
         text-align: center;

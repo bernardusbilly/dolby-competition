@@ -21,9 +21,11 @@ body {
   border-bottom-left-radius: 50%;
 }
 .smooth {
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
   transition-duration: 50ms;
 }
 .round-xs {
@@ -552,9 +554,11 @@ body.piano .introduction .close-introduction {
   border: 1px solid #000000;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
   transition-duration: 50ms;
 }
 body.piano .introduction .close-introduction:hover,
@@ -581,9 +585,11 @@ body.piano .controller {
   width: 50px;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.4);
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
   transition-duration: 50ms;
 }
 body.piano .controller.controller-expand {
@@ -607,9 +613,11 @@ body.piano .controller .shrink-button,
 body.piano .controller .play-button {
   cursor: pointer;
   display: inline-block;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
   transition-duration: 50ms;
 }
 body.piano .controller .expand-button,
@@ -696,13 +704,32 @@ body.peaceful .hexagon {
   -o-transform: rotate(120deg);
   transform: rotate(120deg);
   cursor: pointer;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
   transition-duration: 50ms;
 }
 body.peaceful .hexagon:hover {
   height: 180px;
+}
+body.peaceful .hexagon.active {
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 4000ms;
+  -o-transition-duration: 4000ms;
+  transition-duration: 4000ms;
+}
+body.peaceful .hexagon.active2 {
+  position: absolute;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
 }
 body.peaceful .hexagon-in1 {
   overflow: hidden;
@@ -742,9 +769,11 @@ body.peaceful .traffic,
 body.peaceful .rain,
 body.peaceful .train {
   background-size: 290px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
+  -o-transition-duration: 50ms;
   transition-duration: 50ms;
 }
 body.peaceful .snow {
@@ -827,12 +856,34 @@ body.peaceful #snow {
 body.peaceful #snow:hover {
   top: 0px;
 }
+body.peaceful #snow.active {
+  top: 80px;
+  left: 240px;
+}
+body.peaceful #snow.active:hover {
+  top: 50px;
+}
+body.peaceful #snow.active2 {
+  top: -200px !important;
+  left: -200px !important;
+}
 body.peaceful #kitchen {
   top: 30px;
   left: 550px;
 }
 body.peaceful #kitchen:hover {
   top: 0px;
+}
+body.peaceful #kitchen.active {
+  top: 80px;
+  left: 520px;
+}
+body.peaceful #kitchen.active:hover {
+  top: 50px;
+}
+body.peaceful #kitchen.active2 {
+  top: -200px !important;
+  left: 200px !important;
 }
 body.peaceful #cafe {
   top: 130px;
@@ -841,12 +892,33 @@ body.peaceful #cafe {
 body.peaceful #cafe:hover {
   top: 100px;
 }
+body.peaceful #cafe.active {
+  top: 165px;
+  left: 95px;
+}
+body.peaceful #cafe.active:hover {
+  top: 135px;
+}
+body.peaceful #cafe.active2 {
+  top: -200px !important;
+  left: -400px !important;
+}
 body.peaceful #ocean {
   top: 130px;
   left: 380px;
 }
 body.peaceful #ocean:hover {
   top: 100px;
+}
+body.peaceful #ocean.active {
+  top: 165px;
+}
+body.peaceful #ocean.active:hover {
+  top: 135px;
+}
+body.peaceful #ocean.active2 {
+  top: -200px !important;
+  left: 380px !important;
 }
 body.peaceful #engine {
   top: 130px;
@@ -855,12 +927,34 @@ body.peaceful #engine {
 body.peaceful #engine:hover {
   top: 100px;
 }
+body.peaceful #engine.active {
+  top: 165px;
+  left: 665px;
+}
+body.peaceful #engine.active:hover {
+  top: 135px;
+}
+body.peaceful #engine.active2 {
+  top: -200px !important;
+  left: 1000px !important;
+}
 body.peaceful #lake {
   top: 230px;
   left: 210px;
 }
 body.peaceful #lake:hover {
   top: 200px;
+}
+body.peaceful #lake.active {
+  top: 245px;
+  left: 240px;
+}
+body.peaceful #lake.active:hover {
+  top: 215px;
+}
+body.peaceful #lake.active2 {
+  top: 20px !important;
+  left: -400px !important;
 }
 body.peaceful #park {
   top: 230px;
@@ -869,12 +963,34 @@ body.peaceful #park {
 body.peaceful #park:hover {
   top: 200px;
 }
+body.peaceful #park.active {
+  top: 245px;
+  left: 520px;
+}
+body.peaceful #park.active:hover {
+  top: 215px;
+}
+body.peaceful #park.active2 {
+  top: 20px !important;
+  left: 1000px !important;
+}
 body.peaceful #fire {
   top: 330px;
   left: 40px;
 }
 body.peaceful #fire:hover {
   top: 300px;
+}
+body.peaceful #fire.active {
+  top: 330px;
+  left: 95px;
+}
+body.peaceful #fire.active:hover {
+  top: 300px;
+}
+body.peaceful #fire.active2 {
+  top: 330px !important;
+  left: -400px !important;
 }
 body.peaceful #soda {
   top: 330px;
@@ -883,12 +999,34 @@ body.peaceful #soda {
 body.peaceful #soda:hover {
   top: 300px;
 }
+body.peaceful #soda.active {
+  top: 330px;
+  left: 665px;
+}
+body.peaceful #soda.active:hover {
+  top: 300px;
+}
+body.peaceful #soda.active2 {
+  top: 330px !important;
+  left: 1000px !important;
+}
 body.peaceful #night {
   top: 430px;
   left: 210px;
 }
 body.peaceful #night:hover {
   top: 400px;
+}
+body.peaceful #night.active {
+  top: 400px;
+  left: 240px;
+}
+body.peaceful #night.active:hover {
+  top: 370px;
+}
+body.peaceful #night.active2 {
+  top: 500px !important;
+  left: -500px !important;
 }
 body.peaceful #underwater {
   top: 430px;
@@ -897,12 +1035,34 @@ body.peaceful #underwater {
 body.peaceful #underwater:hover {
   top: 400px;
 }
+body.peaceful #underwater.active {
+  top: 400px;
+  left: 520px;
+}
+body.peaceful #underwater.active:hover {
+  top: 370px;
+}
+body.peaceful #underwater.active2 {
+  top: 500px !important;
+  left: 1000px !important;
+}
 body.peaceful #fireworks {
   top: 530px;
   left: 40px;
 }
 body.peaceful #fireworks:hover {
   top: 500px;
+}
+body.peaceful #fireworks.active {
+  top: 485px;
+  left: 95px;
+}
+body.peaceful #fireworks.active:hover {
+  top: 455px;
+}
+body.peaceful #fireworks.active2 {
+  top: 650px !important;
+  left: -500px !important;
 }
 body.peaceful #windchime {
   top: 530px;
@@ -911,12 +1071,33 @@ body.peaceful #windchime {
 body.peaceful #windchime:hover {
   top: 500px;
 }
+body.peaceful #windchime.active {
+  top: 485px;
+}
+body.peaceful #windchime.active:hover {
+  top: 455px;
+}
+body.peaceful #windchime.active2 {
+  top: 1200px !important;
+  left: 380px !important;
+}
 body.peaceful #traffic {
   top: 530px;
   left: 720px;
 }
 body.peaceful #traffic:hover {
   top: 500px;
+}
+body.peaceful #traffic.active {
+  top: 485px;
+  left: 665px;
+}
+body.peaceful #traffic.active:hover {
+  top: 455px;
+}
+body.peaceful #traffic.active2 {
+  top: 600px !important;
+  left: 1200px !important;
 }
 body.peaceful #rain {
   top: 630px;
@@ -925,12 +1106,34 @@ body.peaceful #rain {
 body.peaceful #rain:hover {
   top: 600px;
 }
+body.peaceful #rain.active {
+  top: 560px;
+  left: 240px;
+}
+body.peaceful #rain.active:hover {
+  top: 530px;
+}
+body.peaceful #rain.active2 {
+  top: 1200px !important;
+  left: 150px !important;
+}
 body.peaceful #train {
   top: 630px;
   left: 550px;
 }
 body.peaceful #train:hover {
   top: 600px;
+}
+body.peaceful #train.active {
+  top: 560px;
+  left: 520px;
+}
+body.peaceful #train.active:hover {
+  top: 530px;
+}
+body.peaceful #train.active2 {
+  top: 1200px !important;
+  left: 600px !important;
 }
 body.peaceful .footer {
   text-align: center;
