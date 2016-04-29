@@ -767,7 +767,9 @@ body.peaceful .fireworks,
 body.peaceful .windchime,
 body.peaceful .traffic,
 body.peaceful .rain,
-body.peaceful .train {
+body.peaceful .train,
+body.peaceful .engine,
+body.peaceful .night {
   background-size: 290px;
   -webkit-transition-timing-function: ease-out;
   -o-transition-timing-function: ease-out;
