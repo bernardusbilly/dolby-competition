@@ -1,0 +1,242 @@
+body.peaceful {
+	.container {
+		position: relative;
+		margin: 0 auto;
+		width: 1000px;
+        height: 800px;
+        overflow: hidden;
+		text-align: center;
+	}
+
+	.hexagon {
+		position: absolute;
+	    overflow: hidden;
+	    visibility: hidden;
+	    -webkit-transform: rotate(120deg);
+	       -moz-transform: rotate(120deg);
+	        -ms-transform: rotate(120deg);
+	         -o-transform: rotate(120deg);
+	            transform: rotate(120deg);
+	    cursor: pointer;
+	    .smooth();
+	    &:hover {
+			height: 180px;
+	    }
+    }
+	.hexagon-in1 {
+	    overflow: hidden;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transform: rotate(-60deg);
+	       -moz-transform: rotate(-60deg);
+	        -ms-transform: rotate(-60deg);
+	         -o-transform: rotate(-60deg);
+	            transform: rotate(-60deg);
+    }
+	.hexagon-in2 {
+	    width: 100%;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-position: 50%;
+	    visibility: visible;
+	    -webkit-transform: rotate(-60deg);
+	       -moz-transform: rotate(-60deg);
+	        -ms-transform: rotate(-60deg);
+	         -o-transform: rotate(-60deg);
+	            transform: rotate(-60deg);
+    }
+
+    .snow, .kitchen, .cafe, .ocean, .lake, .park, .fire, .soda, 
+    .bubblewrap, .underwater, .fireworks, .windchime, .traffic, 
+    .rain, .train {
+    	background-size: 290px;
+    	.smooth();
+    }
+    .snow {
+        background-image: url("../img/background/snow.jpg");
+    }
+    .kitchen {
+        background-image: url("../img/background/kitchen.jpg");
+    }
+    .cafe {
+        background-image: url("../img/background/cafe.jpg");
+    }
+    .ocean {
+    	background-image: url("../img/background/ocean.jpg");
+    }
+    .engine {
+        background-image: url("../img/background/engine.jpg");
+    }
+    .lake {
+    	background-image: url("../img/background/lake.jpg");
+    }
+    .park {
+    	background-image: url("../img/background/park.jpg");
+    }
+    .fire {
+    	background-image: url("../img/background/fire.jpg");
+    }
+    .soda {
+    	background-image: url("../img/background/soda.jpg");
+    }
+    .night {
+    	background-image: url("../img/background/night.jpg");
+    }
+    .underwater {
+    	background-image: url("../img/background/underwater.jpg");
+    }
+    .fireworks {
+        background-image: url("../img/background/fireworks.jpg");
+    }
+    .windchime {
+    	background-image: url("../img/background/windchime.jpg");
+    }
+    .traffic {
+        background-image: url("../img/background/traffic.jpg");   
+    }
+    .rain {
+        background-image: url("../img/background/rain.jpg");   
+    }
+    .train {
+        background-image: url("../img/background/train.jpg");   
+    }
+
+	.hexagon1 {
+	    width: 400px;
+	    height: 120px;
+	    margin: 0 0 0 -80px;
+    }
+	.hexagon2 {
+	    width: 180px;
+	    height: 400px;
+	    margin: -80px 0 0 20px;
+    }
+	.dodecagon {
+	    width: 200px;
+	    height: 200px;
+	    margin: -80px 0 0 20px;
+    }
+
+    #dolby {
+        position: absolute;
+        top: 320px;
+        left: 450px;
+        width: 100px;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+    }
+    #snow {
+        top: 30px;
+        left: 210px;
+        &:hover {
+            top: 0px;
+        }
+    }
+    #kitchen {
+        top: 30px;
+        left: 550px;
+        &:hover {
+            top: 0px;
+        }
+    }
+    #cafe {
+        top: 130px;
+        left: 40px;
+        &:hover {
+            top: 100px;
+        }
+    }
+    #ocean {
+    	top: 130px;
+    	left: 380px;
+    	&:hover {
+    		top: 100px;
+    	}
+    }
+    #engine {
+        top: 130px;
+        left: 720px;
+        &:hover {
+            top: 100px;
+        }
+    }
+    #lake {
+    	top: 230px;
+    	left: 210px;
+    	&:hover {
+    		top: 200px;
+    	}
+    }
+    #park {
+    	top: 230px;
+    	left: 550px;
+    	&:hover {
+    		top: 200px;
+    	}	
+    }
+    #fire {
+    	top: 330px;
+    	left: 40px;
+    	&:hover {
+    		top: 300px;
+    	}
+    }
+    #soda {
+    	top: 330px;
+    	left: 720px;
+    	&:hover {
+    		top: 300px;
+    	}
+    }
+    #night {
+    	top: 430px;
+    	left: 210px;
+    	&:hover {
+    		top: 400px;
+    	}
+    }
+    #underwater {
+    	top: 430px;
+    	left: 550px;
+    	&:hover {
+    		top: 400px;
+    	}
+    }
+    #fireworks {
+        top: 530px;
+        left: 40px;
+        &:hover {
+            top: 500px;
+        }
+    }
+    #windchime {
+    	top: 530px;
+    	left: 380px;
+    	&:hover {
+    		top: 500px;
+    	}
+    }
+    #traffic {
+        top: 530px;
+        left: 720px;
+        &:hover {
+            top: 500px;
+        }   
+    }
+    #rain {
+        top: 630px;
+        left: 210px;
+        &:hover {
+            top: 600px;
+        }   
+    }
+    #train {
+        top: 630px;
+        left: 550px;
+        &:hover {
+            top: 600px;
+        }   
+    }
+}

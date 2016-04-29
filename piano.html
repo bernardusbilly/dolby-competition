@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en" class="no-js">
+<head>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" type="image/png" href="build/img/favicon.png">
+
+	<!-- Main -->
+	<title>Dolby Audio</title>
+	<meta name="description" content="This page is made for Dolby Web Comptetition" />
+	<meta name="keywords" content="Dolby Competition" />
+	<meta name="author" content="Billy Tjiptoning" />
+
+	<!-- Bootstrap -->
+	<link href="build/css/design.css" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Responsive Design -->
+	<!-- <link href="build/css/queries.css" rel="stylesheet"> -->
+
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- IE Reconfig -->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body class="piano">
+	<div class="introduction">
+		<div class="intro-1">
+			See other available songs! <span class="fa fa-long-arrow-right"></span>
+		</div>
+		<div class="intro-2">
+			Play a song! <span class="fa fa-long-arrow-right"></span>
+		</div>
+		<div class="intro-3">
+			Switch between pianos! <span class="fa fa-long-arrow-right"></span>
+		</div>
+		<div class="intro-4">
+			Hover to the bottom of the screen to see the audio controller <span class="fa fa-long-arrow-down"></span>
+		</div>
+		<div class="close-introduction">
+			Next
+		</div>
+		<img class="dolby-audio" src="build/img/DolbyAudioLogo_All/DolbyAudio_Hrztl_black.png"/>
+	</div>
+	<div class="controller">
+		<div class="expand-button">
+			<span class="fa fa-backward"></span>
+		</div>
+		<div class="shrink-button">
+			<span class="fa fa-forward"></span>
+		</div>
+		<div class="play-button">
+			<span class="fa fa-play"></span>
+		</div>
+		<marquee class="song-ticker song-ticker-vertical"
+			behavior="scroll" 
+			scrollamount="3"
+		    onmouseover="this.stop();" 
+		    onmouseout="this.start();">
+		        Branch by Keith Kenniff
+		</marquee>
+		<div class="piano-type">
+			<img src="build/img/piano.png" />
+		</div>
+		<div class="song-list">
+			<div id="1" class="song-option song-active">1. Branch </div>
+			<div id="2" class="song-option">2. Ideal of Hope </div>
+		</div>
+		<div class="copyright">
+			&copy Copyright 2016<br>Bernardus Billy Tjiptoning
+		</div>
+	</div>
+
+	<!-- Initial Background -->
+	<img src="build/img/piano1/0.jpg" class="photo-container">
+	<img class="dolby-audio-2" src="build/img/DolbyAudioLogo_All/DolbyAudio_Hrztl_white.png"/>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://s3-us-west-1.amazonaws.com/dolbydeveloper/1.1.0/js/dolby.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/benchmark/2.1.0/benchmark.js"></script>
+	<script src="build/js/scripts.js"></script>
+
+	
+</body>
+</html>
