@@ -932,3 +932,9 @@ body.peaceful #train {
 body.peaceful #train:hover {
   top: 600px;
 }
+body.peaceful .footer {
+  text-align: center;
+  color: #333;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}

@@ -13,7 +13,7 @@ $(document).ready(function() {
 	var audio;
 	$('.hexagon').hover(function(){
 		if (ddolby === true) {
-			audio = new Audio("build/audio/" + this.id+ ".mp4");	
+			audio = new Audio("build/audio/" + this.id+ "_Dolby.mp4");	
 		} else {
 			audio = new Audio("build/audio/" + this.id+ ".mp3");	
 		}
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 	$('#dolby').hover(function() {
 		if (ddolby === true) {
-			audio = new Audio("build/audio/" + this.id+ ".mp4");	
+			audio = new Audio("build/audio/" + this.id+ "_Dolby.mp4");	
 		} else {
 			audio = new Audio("build/audio/" + this.id+ ".mp3");	
 		}
