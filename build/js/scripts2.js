@@ -39,7 +39,7 @@ $(document).ready(function() {
 		setTimeout(function() {
 			$('.hexagon').removeClass("active");
 			if (stillInHover == true) {
-				$('.hexagon').addClass("active2");
+				$('.hexagon').addClass("active2");	
 			}
 		}, 13000);
 	}, function() {

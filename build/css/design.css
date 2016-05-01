@@ -1143,3 +1143,41 @@ body.peaceful .footer {
   margin-top: -20px;
   margin-bottom: 30px;
 }
+body.video {
+  background-color: black;
+}
+body.video .video-container {
+  position: absolute;
+  top: -20px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+body.video .cover {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+body.video .cover img {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 200px;
+}
+body.video .cover .controller-wrapper {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: 50px;
+}
+body.video .cover .controller-wrapper .audio-controller {
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 40px;
+}
+body.video .cover .footer {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
