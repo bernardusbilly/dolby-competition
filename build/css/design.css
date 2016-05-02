@@ -1181,3 +1181,37 @@ body.video .cover .footer {
   bottom: 10px;
   right: 20px;
 }
+body.music .slow,
+body.music .normal,
+body.music .fast {
+  position: relative;
+  float: left;
+  width: 33%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+}
+body.music .slow img,
+body.music .normal img,
+body.music .fast img {
+  display: inline-block;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+}
+body.music .slow,
+body.music .fast {
+  cursor: pointer;
+  background-color: grey;
+}
+body.music .slow img {
+  margin: -50px 0 0 -100px;
+}
+body.music .fast img {
+  margin: -100px 0 0 -100px;
+}
+body.music .normal img {
+  width: 200px;
+}

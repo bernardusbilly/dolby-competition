@@ -14,7 +14,6 @@ $(document).ready(function() {
 	}
 
 	var video = $('#vid');
-	video.get(0).play();
 	audio.play();
 	audio.loop = true;
 
