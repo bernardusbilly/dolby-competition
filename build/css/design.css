@@ -1196,10 +1196,17 @@ body.music .fast {
 body.music .slow img,
 body.music .normal img,
 body.music .fast img {
-  display: inline-block;
+  position: absolute;
   width: 200px;
   top: 50%;
   left: 50%;
+}
+body.music .slow .footer,
+body.music .normal .footer,
+body.music .fast .footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
 }
 body.music .slow,
 body.music .fast {
@@ -1209,9 +1216,9 @@ body.music .fast {
 body.music .slow img {
   margin: -50px 0 0 -100px;
 }
+body.music .normal img {
+  margin: -10px 0 0 -100px;
+}
 body.music .fast img {
   margin: -100px 0 0 -100px;
-}
-body.music .normal img {
-  width: 200px;
 }
